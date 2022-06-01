@@ -18,7 +18,8 @@
         "nome": ""
  }
 
-
+////////////////////////////////////////
+ 
  (2) /POST           /filme
 
  request body
@@ -28,7 +29,6 @@
         "avaliacao": 0.0,
         "lancamento": "2020-10-00",
         "disponivel": true,
-        "imagem": "",
         "usuario": 0
  }
 
@@ -41,11 +41,26 @@
         "avaliacao": 0.0,
         "lancamento": "2020-10-00",
         "disponivel": true,
-        "imagem": "",
         "usuario": 0
  }
 
+////////////////////////////////////////
+ 
+ (2.1) /PUT         /filme:id/imagem
 
+ request body (form)
+ {
+        "imagem": "",
+        
+ }
+
+
+ response (204)
+
+--sem conteúdo
+ 
+
+////////////////////////////////////////
 
 (3)   /PUT               /filme/:id
 
@@ -66,7 +81,7 @@ response (204)
 
 -- sem conteúdo
 
-
+////////////////////////////////////////
 
 (4)  /DELETE         /filme/:id
 
@@ -75,7 +90,7 @@ response (204)
 
 
 
-
+////////////////////////////////////////
 
 (5) /GET          /filme
 
@@ -94,7 +109,7 @@ response (200)
 
 
 
-
+////////////////////////////////////////
 
 
 (6)    /GEt                     /filme/busca?nome=xx
@@ -118,7 +133,7 @@ response (200)
 
 
 
-
+////////////////////////////////////////
 
 (7) /GET                /filme/:id
 
